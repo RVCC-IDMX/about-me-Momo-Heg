@@ -1,0 +1,30 @@
+body {
+   font-family:Roboto;
+    background-color:#101833;
+    color:#9DA5C0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family:"Barriecito";
+    font-size:40pt;
+}
+
+header {
+    text-align:center;
+}
+
+#hero, footer {
+    color:#7A8196;
+    border: 5px solid #98ACEB;
+    background-color: #1F2741;
+    text-align:center;
+    padding:10px;
+}
+
+#hero img {
+    width:300px;
+}
+
+#bio {
+    text-align:center;
+}
