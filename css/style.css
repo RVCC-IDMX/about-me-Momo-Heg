@@ -6,8 +6,10 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
     font-family:"Barriecito";
+   text-align:center;
+}
+h1{
     font-size:40pt;
-    text-align:center;
 }
 
 header {
@@ -22,14 +24,34 @@ header {
     padding:10px;
 }
 
+/* Hero Section */
+
 #hero img {
     width:300px;
 }
+
+/* Bio Section */
 
 #bio {
     text-align:center;
 }
 
-#bio ul li:nth-child(even){
+/* Hoppies */
+
+#hoppies ul li:nth-child(even){
 color:#000;
+}
+
+/* Gallery */
+
+#gallery {
+    border: 2px solid #7A8196;
+}
+
+#gallery img {
+    max-width: 100%;
+}
+
+#gallery figure{
+    text-align: center;
 }
