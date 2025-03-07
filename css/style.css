@@ -46,7 +46,9 @@ color:#000;
 
 #gallery {
     border: 2px solid #7A8196;
+    margin-bottom:2rem;
 }
+
 
 #gallery img {
     max-width: 100%;
@@ -54,4 +56,38 @@ color:#000;
 
 #gallery figure{
     text-align: center;
+}
+
+/* Literature */ 
+#Lit {
+    border: 2px solid #7A8196;
+    margin-bottom:2rem;
+}
+
+#Lit div {
+    padding:2rem;
+    max-width: 40rem;
+    margin: 0 auto;
+}
+
+#Lit div p {
+    padding: 0.3rem 0;
+    clear: both;
+}
+
+/* Dropcamps */
+
+#Lit div p:nth-child(3n+1):first-letter {
+color:aquamarine;
+float:left;
+font-size:3em;
+padding:.25em;
+margin-right:.25em;
+line-height:.65;
+border:4px outset honeydew;
+font-family:"Barriecito";
+text-shadow:2px 2px 3px rgba(0,0,0,5);
+box-shadow:5px 5px 5px rgba(0,0,0,5);
+border-top-left-radius: .2em;
+border-bottom-right-radius: .2em;
 }
