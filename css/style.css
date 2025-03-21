@@ -96,7 +96,7 @@ border-top-left-radius: .2em;
 border-bottom-right-radius: .2em;
 }
 
-/*tablet size*/
+/* tablet size */
 @media screen and (min-width: 60em) {  
     #gallery {
         display: grid;
@@ -118,21 +118,21 @@ border-bottom-right-radius: .2em;
     }
 
     #gallery figcaption {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 2rem;
-    margin-left: 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 2rem;
+        margin-left: 1rem;
     }
 
-    #gallery img {
-    width: 100%;
-    height: auto;
+    figure img {
+        width: 100%;
+        height: auto;
     }
 
     #lit div {
-    max-width: 100%;
-    columns: 40rems;
+        max-width: 100%;
+        columns: 20rems;
     }
     }
 
@@ -143,11 +143,11 @@ border-bottom-right-radius: .2em;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr; 
     }
-    #gallery h2 {
+     #gallery h2 {
         grid-column: 1/-1;
         text-align: center; 
     }
-    #gallery figure {
+    figure {
         display: block; 
     }
     hr {
