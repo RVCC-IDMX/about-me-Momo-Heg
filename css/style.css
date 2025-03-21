@@ -40,7 +40,6 @@ header {
 /* Hoppies */
 
 #hoppies ul li:nth-child(even){
-color:#000;
 display: flex; 
 flex-direction: column; 
 align-items: center;
@@ -81,13 +80,14 @@ align-items: center;
 
 /* Dropcamps */
 
-#Lit div p:nth-child(3n+1):first-letter {
+#Lit div p:first-child:first-letter {
 color:aquamarine;
+background-image: radial-gradient(#fff, #a3721c);
 float:left;
 font-size:3em;
 padding:.25em;
-margin-right:.25em;
-line-height:.65;
+margin-right:0.25em;
+line-height:0.65;
 border:4px outset honeydew;
 font-family:"Barriecito";
 text-shadow:2px 2px 3px rgba(0,0,0,5);
@@ -101,24 +101,62 @@ border-bottom-right-radius: .2em;
     #gallery {
         display: grid;
         grid-template-columns: 2fr 1fr;
+        flex-direction: column;
+        gap: 2rem;
+        padding: 2rem;
+        
     }
-figure{
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-}
 
-figcaption {
+     #gallery h2 {
+        margin-bottom: 1.5rem;
+    }
+
+    #gallery figure {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 1rem;
+    }
+
+    #gallery figcaption {
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 2rem;
     margin-left: 1rem;
-}
+    }
 
-#lit div {
+    #gallery img {
+    width: 100%;
+    height: auto;
+    }
+
+    #lit div {
     max-width: 100%;
-    columns: 20rems;
-}
+    columns: 40rems;
+    }
+    }
 
+/* large screen size */
+
+@media screen and (min-width: 100em) {
+    #gallery {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr; 
+    }
+    #gallery h2 {
+        grid-column: 1/-1;
+        text-align: center; 
+    }
+    #gallery figure {
+        display: block; 
+    }
+    hr {
+        display: none; 
+    }
+    #gallery img {
+        width: auto;
+        max-width: 100%;
+        height:auto;
+    }
 }
     
