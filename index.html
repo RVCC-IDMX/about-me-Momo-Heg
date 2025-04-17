@@ -145,11 +145,82 @@
         <!-- New Video Section -->
         <section id="video">
             <h2>My Story</h2>
-            <p>A glimpse into my journey as a web developer.</p>
+            <p>Catching Sun eclipse</p>
             <div class="video-wrapper">
                 <iframe id="myVideo" src="https://www.youtube.com/embed/Tbiih32k2Fo?si=Z6ZClhXIOW52puhx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
         </section>
+
+
+
+
+
+
+       <section id="Contact">
+
+            <h2>Contact Us:</h2>
+        
+            <form id="contactform" name="contactform" methods="post" 
+            data-netlify="true">
+                
+                <fieldset>
+                    <legend>Contact Form</legend>
+
+                    <div id="formElements">
+                    <!-- Name -->
+                         <label for="name">Name (required)</label>
+                         <input type="text" id="name" name="name" required>
+
+            
+                    <!-- Email -->
+                         <label for="email">Email (required):</label>
+                         <input type="email" id="email" name="email" required>
+
+                    <!-- Phone -->
+                         <label for="phone">Phone (required):</label>
+                         <input type="tel" id="phone" name="phone" required>
+
+                    <!-- Phone type -->
+                         <label for="phonetype">Phone type (optional):</label>
+                         <select id="phonetype">
+                            <option value="" selected>Select phone type</option>
+                            <option value="mobile">Mobile</option>
+                            <option value="home">Home</option>
+                            <option value="work">Work</option>
+                         </select>
+                  
+                         <!-- Massage -->
+                          <label for="message">Message (optional)</label>
+                          <textarea id="message" name="message" rows="4" cols="50"></textarea>
+                        <!-- Reply -->
+                         <fieldset>
+                          <legend>Would you like a follow-up?</legend>
+
+                          <ul>
+                              <li>
+                                  <input type="radio" id="followup-yes" name="followup">
+                                  <label for="followup-yes">Yes</label>
+                              </li>
+                              <li>
+                                  <input type="radio" id="followup-no" name="followup" checked>
+                                  <label for="followup-no">No</label>
+                              </li>
+                          </ul>
+                        
+                         </fieldset>
+
+                         <!-- Submit -->
+                             <button type="submit">Send</button>
+                    </div>
+
+                </fieldset>
+
+            </form>
+
+        </section>
+
+
+
     </main>
 
     <footer>
