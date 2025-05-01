@@ -1,26 +1,33 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
+    <!-- Meta tags for character encoding and responsive viewport -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Me</title>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Barriecito&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
+    <!-- Google Fonts for typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Barriecito&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- CSS stylesheet -->
     <link href="css/style.css" rel="stylesheet">
-    <link href="css/nav.css" rel="stylesheet">
-    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="96x96" href="img/favicon-96x96.png">
 </head>
 
 <body>
+    <!-- Header with navigation and logo -->
     <header>
         <nav class="navbar">
             <div class="logo">
-                <img src="img/MH Logo (4).png" alt="Name logo" width="300px" class="logo-img">
-                <h1 class="logo-title"></h1> Web Dev I</h1>
+                <img src="img/MH Logo (4).png" alt="Name logo" class="logo-img">
+                <h1 class="logo-title">Mahmoud Hegazi - Web Dev I</h1>
             </div>
+            <!-- Hamburger menu toggle -->
+            <input type="checkbox" id="nav-toggle" class="nav-toggle">
+            <label for="nav-toggle" class="nav-toggle-label">
+                <span></span> <!-- Hamburger icon lines -->
+            </label>
+            <!-- Navigation links -->
             <div class="navbar-links">
                 <ul>
                     <li><a href="#bio" class="nav-links">Bio</a></li>
@@ -33,131 +40,187 @@
     </header>
 
     <main>
+        <!-- Hero Section with name and location -->
         <section id="hero">
-            <img src="img/avataaars.png" alt="Avatar picture of Mahmoud Hegazi">
+            <h2>Welcome to My WepPage</h2>
             <div>
                 <p>Mahmoud Hegazi</p>
                 <p>Somerville, NJ</p>
             </div>
         </section>
 
+        <!-- Biography Section with profile picture -->
         <section id="bio">
             <h2>Biography:</h2>
+            <img src="img/avataaars.png" alt="Avatar picture of Mahmoud Hegazi" class="profile-pic">
             <div>
-                <p>Mahmoud Hegazi here</p>
+                <p>I’m Mahmoud Hegazi, a web development student at RVCC with a passion for designing visually stunning and functional websites. My journey into web development began when I realized I could merge my love for creativity and technology to build experiences that connect with people online. I’m particularly drawn to minimalist designs with bold contrasts, which is why I chose a dark, sleek theme for this project. Beyond coding, I’m an enthusiast of gaming, photography, and soccer—hobbies that inspire my creativity and keep me motivated. This project is a significant milestone, allowing me to showcase my HTML and CSS skills while creating a professional portfolio for potential employers. I aspire to become a front-end developer, focusing on responsive and accessible designs that enhance user experiences. My goal is to create digital spaces that are both beautiful and functional, leaving a lasting impact on users.</p>
             </div>
         </section>
 
+        <!-- Hobbies Section with updated list -->
         <section id="hobbies">
             <h2>Hobbies</h2>
             <ul>
-                <li>Gaming</li>
-                <li>Soccer</li>
-                <li>Exercise</li>
-                <li>Running</li>
-                <li>Photography</li>
-                <li>Table tennis</li>
-                <li>Cooking</li>
+                <li><strong>Gaming:</strong> I’ve been gaming for years, diving into immersive worlds like *Assassin’s Creed* where I can explore history through adventure. I also enjoy competitive games like *FIFA*, which let me connect with friends online.</li>
+                <li><strong>Soccer:</strong> Soccer is my passion—I play pickup games every weekend and follow the UEFA Champions League, cheering for my favorite teams with unmatched excitement.</li>
+                <li><strong>Photography:</strong> Photography lets me capture life’s beauty, from vibrant sunsets to cityscapes, always chasing that perfect shot to tell a story.</li>
+                <li><strong>Table Tennis:</strong> I enjoy the fast-paced fun of table tennis, playing casually with friends and family to unwind.</li>
             </ul>
         </section>
 
+        <!-- Photo Gallery Section with enhanced hover effect -->
         <section id="gallery">
             <h2>Photo Gallery</h2>
-            <hr>
-            <figure>
-                <img src="img/Moon-640w.jpg" alt="Moonlight shining at night">
-                <figcaption>Moonlight coming at night.</figcaption>
-            </figure>
-            <hr>
-            <figure>
-                <img src="img/Sky-640w.jpg" alt="Heart-shaped cloud in the sky">
-                <figcaption>Sky heart.</figcaption>
-            </figure>
-            <hr>
-            <figure>
-                <img src="img/Sunset-640w.jpg" alt="Sunset over a landscape">
-                <figcaption>Sunset down.</figcaption>
-            </figure>
+            <div class="gallery-grid">
+                <figure>
+                    <!-- Container for image and overlay -->
+                    <div class="gallery-item">
+                        <img src="img/Moon-640w.jpg" alt="Moonlit night sky">
+                        <div class="gallery-overlay">
+                            <p>Moonlit Night Sky</p>
+                        </div>
+                    </div>
+                    <figcaption>Moonlit Night Sky</figcaption>
+                </figure>
+                <figure>
+                    <div class="gallery-item">
+                        <img src="img/Sky-640w.jpg" alt="Heart-shaped cloud in the sky">
+                        <div class="gallery-overlay">
+                            <p>Heart-Shaped Cloud</p>
+                        </div>
+                    </div>
+                    <figcaption>Heart-Shaped Cloud</figcaption>
+                </figure>
+                <figure>
+                    <div class="gallery-item">
+                        <img src="img/Sunset-640w.jpg" alt="Golden sunset over a landscape">
+                        <div class="gallery-overlay">
+                            <p>Golden Sunset</p>
+                        </div>
+                    </div>
+                    <figcaption>Golden Sunset</figcaption>
+                </figure>
+            </div>
         </section>
 
-        <article id="lit">
-            <h2>Lorem Ipsum</h2>
+        <!-- Blog Article Section -->
+        <article id="lit" class="lit">
+            <h2>Blog Article: Making Websites Fun with Image Hover Effects</h2>
             <div>
-                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam hendrerit ultricies pulvinar. Sed
-                    dapibus metus a massa
-                    semper congue. Etiam eget egestas erat. Fusce dapibus, enim hendrerit laoreet egestas, lectus dolor
-                    luctus justo, nec
-                    cursus mi libero eget velit. Orci varius natoque penatibus et magnis dis parturient montes, nascetur
-                    ridiculus mus. Sed
-                    purus elit, consequat at egestas ac, gravida non sapien. Integer at diam vel nisl placerat blandit
-                    ut maximus lectus.
-                    Nullam ante nisi, congue nec sem ut, dictum placerat augue."</p>
+                <p>Image hover effects are a simple way to make websites more fun and interactive. As a web development student at RVCC, I’ve been learning how to use CSS to add these effects to my portfolio project. In this article, I’ll explain what image hover effects are, how they work, and show you two examples I’ve created using my gallery images. I’ll also share the HTML and CSS code so you can see how they’re made. Hover effects are easy to learn and can make your website stand out!</p>
 
-                <p>"Etiam ultrices, elit non porta tincidunt, est nibh tempus ante, ut vulputate nulla sem eu dolor.
-                    Morbi fermentum
-                    diam accumsan luctus lacinia. Suspendisse sit amet elit eget neque dapibus suscipit. Donec ante
-                    odio, molestie ut
-                    sem vitae, ullamcorper semper nulla. Vestibulum molestie efficitur risus, a eleifend augue blandit
-                    in. Proin tempus
-                    eleifend gravida. Suspendisse aliquam purus et dolor sollicitudin vehicula. Aenean sit amet orci
-                    est. Class aptent
-                    taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Cras augue dui,
-                    mattis a rutrum ac,
-                    condimentum quis nunc. Nulla leo erat, elementum vel tortor in, porta lobortis ligula."</p>
+                <p>An image hover effect happens when you hover your mouse over an image, and it changes in some way. For example, the image might get bigger, fade, or show a caption. These effects are made with CSS, a language that styles web pages. The main tool for hover effects is the <code>:hover</code> pseudo-class, which applies styles when your cursor is over an element. For example, if I want an image to grow when you hover over it, I can use the <code>transform</code> property with <code>:hover</code>, like this: <code>transform: scale(1.1);</code>. To make the change smooth, I add the <code>transition</code> property, such as <code>transition: transform 0.3s ease;</code>, which makes the effect happen over 0.3 seconds with a smooth “ease” timing.</p>
 
-                <p>"In in dictum nulla. Pellentesque sollicitudin odio non mi tincidunt lobortis. Etiam vitae finibus
-                    justo. Phasellus
-                    sed facilisis lectus. Fusce quis mollis sapien. Nam et tortor ut nisl congue eleifend. Donec maximus
-                    ipsum in est
-                    porttitor, et dictum nisi cursus. Nulla fermentum luctus commodo."</p>
+                <p>In my portfolio’s photo gallery, I already use a hover effect where images grow slightly when you hover over them. This makes the gallery more interactive, encouraging users to explore the photos. Hover effects are great for many types of websites. In online stores, they can show a “Buy Now” button when you hover over a product image. In blogs, they can reveal a caption or description. They’re also lightweight because they only use CSS, not JavaScript, so they don’t slow down your site.</p>
 
-                <p>"Pellentesque molestie elit risus, non laoreet risus hendrerit a. Vestibulum in purus eu mauris
-                    ullamcorper placerat.
-                    Vestibulum porta dolor non maximus dapibus. Fusce eget tincidunt nisl, faucibus elementum mauris.
-                    Donec dapibus,
-                    magna eget ultricies lobortis, lorem turpis laoreet eros, id consequat elit felis et mauris. Nullam
-                    venenatis
-                    lobortis varius. Cras vitae viverra augue, ac ultrices libero. Etiam vel leo eu ipsum suscipit
-                    tempor. Nunc
-                    pellentesque venenatis tincidunt. Nullam lectus justo, porttitor vel sagittis ac, rhoncus eget
-                    massa."</p>
+                <p>Let’s look at a new hover effect I’ve added. Below, I’ve taken my moonlight image and made it fade slightly on hover, giving it a dreamy look. This effect uses the <code>opacity</code> property, which controls how see-through an image is. I set the image’s normal <code>opacity</code> to 1 (fully visible) and change it to 0.7 on hover, with a <code>transition</code> to make it smooth. Try hovering over the image to see it fade! Here’s the code I used:</p>
 
-                <p>"In hac habitasse platea dictumst. Aenean enim enim, feugiat at lectus vitae, consectetur elementum
-                    urna. Vestibulum
-                    quis est posuere, cursus sapien ut, elementum felis. In et est dictum, consectetur ligula id,
-                    gravida risus. Donec
-                    malesuada, velit sed maximus consequat, mi lectus bibendum nisi, in vehicula enim mauris id elit.
-                    Vivamus convallis
-                    enim tempor, mattis lacus in, vulputate orci. Maecenas massa nisi, tempor sed auctor vitae,
-                    consectetur vitae velit.
-                    Nunc elit lacus, pellentesque sed risus ut, posuere semper neque. Morbi sodales malesuada quam, eget
-                    posuere enim
-                    viverra ut. In dapibus eros ac dolor iaculis, ac pulvinar augue malesuada. Curabitur malesuada purus
-                    sit amet dolor
-                    viverra, pellentesque dictum quam mattis. In dictum, augue ut dictum venenatis, nisi tellus iaculis
-                    elit, et
-                    fermentum urna eros nec sapien. In ultricies, dui in tempus bibendum, nibh sapien porta metus, vitae
-                    ornare risus
-                    est sit amet sem. Maecenas ac vehicula elit. Phasellus finibus nisl a gravida cursus. Nulla sodales
-                    eu nibh vel
-                    cursus."</p>
+                <h3>Fade Effect Example</h3>
+                <div class="hover-example">
+                    <img src="img/Moon-640w.jpg" alt="Moonlight shining at night" class="fade-image">
+                </div>
+
+                <h4>HTML for Fade Effect</h4>
+                <pre><div class="hover-example">
+    <img src="img/Moon-640w.jpg" alt="Moonlight shining at night" class="fade-image">
+</div></pre>
+
+                <h4>CSS for Fade Effect</h4>
+                <pre>.hover-example {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.fade-image {
+    opacity: 1;
+    transition: opacity 0.3s ease;
+    width: 300px;
+}
+
+.fade-image:hover {
+    opacity: 0.7;
+}</pre>
+
+                <p>Another cool hover effect is adding an overlay with text. Below, I’ve used my sunset image to show this. When you hover over it, a dark overlay appears with the text “Golden Sunset.” This effect uses a <code>&lt;div&gt;</code> positioned over the image with <code>position: absolute</code>. The overlay starts with <code>opacity: 0</code> (invisible) and changes to <code>opacity: 0.8</code> on hover, again using a <code>transition</code> for smoothness. This is perfect for adding captions without cluttering the page. Here’s the code for this effect:</p>
+
+                <h3>Overlay Effect Example</h3>
+                <div class="hover-example">
+                    <div class="image-container">
+                        <img src="img/Sunset-640w.jpg" alt="Sunset over a landscape">
+                        <div class="overlay">
+                            <p>Golden Sunset</p>
+                        </div>
+                    </div>
+                </div>
+
+                <h4>HTML for Overlay Effect</h4>
+                <pre><div class="hover-example">
+    <div class="image-container">
+        <img src="img/Sunset-640w.jpg" alt="Sunset over a landscape">
+        <div class="overlay">
+            <p>Golden Sunset</p>
+        </div>
+    </div>
+</div></pre>
+
+                <h4>CSS for Overlay Effect</h4>
+                <pre>.hover-example {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.image-container {
+    position: relative;
+    width: 300px;
+}
+
+.image-container img {
+    display: block;
+    height: auto;
+    width: 100%;
+}
+
+.image-container .overlay {
+    align-items: center;
+    background-color: rgba(16, 24, 51, 0.8);
+    bottom: 0;
+    color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: opacity 0.3s ease;
+}
+
+.image-container:hover .overlay {
+    opacity: 0.8;
+}</pre>
+
+                <p>Hover effects are supported in all modern browsers, like Chrome and Firefox, so they’re reliable to use. However, you should make sure they don’t distract users or make the site hard to use. For example, I’ve kept my effects subtle so they don’t overwhelm visitors. Learning hover effects has been a fun way to improve my CSS skills, and I’m excited to use them in more projects as I grow as a web developer!</p>
             </div>
         </article>
 
-        <!-- New Video Section -->
+        <!-- Video Section -->
         <section id="video">
             <h2>My Story</h2>
             <p>Catching Sun eclipse</p>
             <div class="video-wrapper">
-                <iframe id="myVideo" src="https://www.youtube.com/embed/Tbiih32k2Fo?si=Z6ZClhXIOW52puhx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <iframe id="myVideo" src="https://www.youtube.com/embed/Tbiih32k2Fo?si=Z6ZClhXIOW52puhx" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
         </section>
 
+        <!-- Contact Section with Form -->
         <section id="contact">
             <h2>Contact Us:</h2>
             <form id="contactform" name="contactform" method="POST" data-netlify="true" data-netlify-honeypot="bot-field">
                 <input type="hidden" name="form-name" value="contactform">
-                <input type="hidden" name="bot-field" aria-hidden="true">
+                <input type="hidden" name="bot-field">
                 <fieldset>
                     <legend>Contact Form</legend>
                     <div id="formElements">
@@ -209,8 +272,15 @@
         </section>
     </main>
 
+    <!-- Footer with Copyright and Links -->
     <footer>
-        ©2020 - Mahmoud Hegazi
+        <p>© 2025 Mahmoud Hegazi. All rights reserved.</p>
+        <p>
+            <a href="https://github.com/RVCC-IDMX/about-me-Momo-Heg" target="_blank">GitHub</a> | 
+            <a href="https://twitter.com/MomoHegazi" target="_blank">Twitter</a> | 
+            <a href="https://instagram.com/MomoHegazi" target="_blank">Instagram</a> | 
+            <a href="https://linkedin.com/in/mahmoud-hegazi" target="_blank">LinkedIn</a>
+        </p>
     </footer>
 </body>
 </html>
